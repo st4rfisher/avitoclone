@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    container_name: avito-clone-frontend
+    # Убираем порты - доступ только через nginx
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - avito-clone-network
+
+  nginx:
+    build:
+      context: nginx
+      dockerfile: Dockerfile
+    container_name: avito-clone-nginx
+    ports:
+      - "8080:80"  # Только nginx публикует порт
+    depends_on:
+      - frontend  # Nginx запускается после frontend
+    restart: unless-stopped
+    networks:
+      - avito-clone-network
+
+networks:
+  avito-clone-network:
+    driver: bridge

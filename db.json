@@ -1,0 +1,120 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "2-комнатная квартира в центре",
+      "description": "Светлая квартира с евроремонтом, рядом метро и парк. Тихий двор, консьерж.",
+      "location": "Москва",
+      "type": "Недвижимость",
+      "image": "https://via.placeholder.com/400x300?text=Квартира",
+      "createdAt": "2026-02-01T10:00:00Z",
+      "propertyType": "Квартира",
+      "area": 54,
+      "rooms": 2,
+      "price": 12500000
+    },
+    {
+      "id": 2,
+      "name": "Загородный дом с участком",
+      "description": "Кирпичный дом 150 м², участок 10 соток, баня, гараж. 15 км от города.",
+      "location": "Московская область",
+      "type": "Недвижимость",
+      "image": "https://via.placeholder.com/400x300?text=Дом",
+      "createdAt": "2026-02-02T14:30:00Z",
+      "propertyType": "Дом",
+      "area": 150,
+      "rooms": 4,
+      "price": 8900000
+    },
+    {
+      "id": 3,
+      "name": "Студия в новостройке",
+      "description": "Сдача дома в 2026 году, 7 этаж из 25, вид на город. Отделка white box.",
+      "location": "Санкт-Петербург",
+      "type": "Недвижимость",
+      "image": "https://via.placeholder.com/400x300?text=Студия",
+      "createdAt": "2026-02-03T09:15:00Z",
+      "propertyType": "Студия",
+      "area": 28,
+      "rooms": 1,
+      "price": 4200000
+    },
+    {
+      "id": 4,
+      "name": "Toyota Camry 2022",
+      "description": "Один владелец, полное ТО у дилера, зимняя резина в подарок. Без ДТП.",
+      "location": "Москва",
+      "type": "Авто",
+      "image": "https://via.placeholder.com/400x300?text=Camry",
+      "createdAt": "2026-02-01T12:00:00Z",
+      "brand": "Toyota",
+      "model": "Camry",
+      "year": 2022,
+      "mileage": 45000
+    },
+    {
+      "id": 5,
+      "name": "BMW X5 2021",
+      "description": "M-пакет, панорамная крыша, пневмоподвеска. Максимальная комплектация.",
+      "location": "Санкт-Петербург",
+      "type": "Авто",
+      "image": "https://via.placeholder.com/400x300?text=BMW+X5",
+      "createdAt": "2026-02-02T16:45:00Z",
+      "brand": "BMW",
+      "model": "X5",
+      "year": 2021,
+      "mileage": 62000
+    },
+    {
+      "id": 6,
+      "name": "Volkswagen Polo 2020",
+      "description": "Экономичный городской автомобиль, расход 6л/100км. Отличное состояние.",
+      "location": "Казань",
+      "type": "Авто",
+      "image": "https://via.placeholder.com/400x300?text=VW+Polo",
+      "createdAt": "2026-02-03T11:20:00Z",
+      "brand": "Volkswagen",
+      "model": "Polo",
+      "year": 2020,
+      "mileage": 78000
+    },
+    {
+      "id": 7,
+      "name": "Ремонт квартир под ключ",
+      "description": "Все виды отделочных работ: штукатурка, плитка, ламинат, электрика, сантехника.",
+      "location": "Москва",
+      "type": "Услуги",
+      "image": "https://via.placeholder.com/400x300?text=Ремонт",
+      "createdAt": "2026-02-01T08:00:00Z",
+      "serviceType": "Ремонт",
+      "experience": 12,
+      "cost": 5000,
+      "workSchedule": "Пн-Сб, 9:00-18:00"
+    },
+    {
+      "id": 8,
+      "name": "Репетитор по математике",
+      "description": "Подготовка к ЕГЭ и ОГЭ, помощь школьникам 5-11 класс. Онлайн и очно.",
+      "location": "Санкт-Петербург",
+      "type": "Услуги",
+      "image": "https://via.placeholder.com/400x300?text=Репетитор",
+      "createdAt": "2026-02-02T10:30:00Z",
+      "serviceType": "Образование",
+      "experience": 8,
+      "cost": 2000,
+      "workSchedule": "Пн-Вс, 10:00-20:00"
+    },
+    {
+      "id": 9,
+      "name": "Грузоперевозки по городу",
+      "description": "Газель, грузчики. Переезды, доставка мебели и техники. Быстро и аккуратно.",
+      "location": "Екатеринбург",
+      "type": "Услуги",
+      "image": "https://via.placeholder.com/400x300?text=Грузоперевозки",
+      "createdAt": "2026-02-03T07:45:00Z",
+      "serviceType": "Транспорт",
+      "experience": 5,
+      "cost": 1500
+    }
+  ]
+}

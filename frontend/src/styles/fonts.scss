@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url('https://cdn.jsdelivr.net/npm/@fontsource/roboto@5.2.8/files/roboto-cyrillic-400-normal.woff2')
+      format('woff2'),
+    url('https://cdn.jsdelivr.net/npm/@fontsource/roboto@5.2.8/files/roboto-cyrillic-400-normal.woff')
+      format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url('https://cdn.jsdelivr.net/npm/@fontsource/roboto@5.2.8/files/roboto-cyrillic-700-normal.woff2')
+      format('woff2'),
+    url('https://cdn.jsdelivr.net/npm/@fontsource/roboto@5.2.8/files/roboto-cyrillic-700-normal.woff')
+      format('woff');
+}

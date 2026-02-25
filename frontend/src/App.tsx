@@ -1,28 +1,21 @@
-import { Routes, Route } from 'react-router-dom';
-import './styles/App.scss';
+import { Routes, Route } from 'react-router-dom'
+import { Box } from '@chakra-ui/react'
+import { Header } from './components/Header'
+import { ItemListPage, ItemPage, CreateItemPage } from './pages'
 
-function App() {
+export default function App() {
   return (
-    <div className="app">
-      <header className="app-header">
-        <h1>Avito Clone</h1>
-      </header>
-      <main className="app-main">
+    <Box minH="100vh" display="flex" flexDirection="column">
+      <Header />
+
+      <Box as="main" flex="1" bg="gray.50" p={6}>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<ItemListPage />} />
+          <Route path="/items/:id" element={<ItemPage />} />
+          <Route path="/create" element={<CreateItemPage />} />
+          <Route path="/edit/:id" element={<CreateItemPage />} />
         </Routes>
-      </main>
-    </div>
-  );
+      </Box>
+    </Box>
+  )
 }
-
-function HomePage() {
-  return (
-    <div className="home-page">
-      <h2>Добро пожаловать!</h2>
-      <p>Проект успешно настроен и готов к разработке.</p>
-    </div>
-  );
-}
-
-export default App;

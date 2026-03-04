@@ -22,7 +22,17 @@
 
     /* Path aliases */
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@api": ["./src/api"],
+      "@api/*": ["./src/api/*"],
+      "@components": ["./src/components"],
+      "@components/*": ["./src/components/*"],
+      "@pages": ["./src/pages"],
+      "@pages/*": ["./src/pages/*"],
+      "@styles": ["./src/styles"],
+      "@styles/*": ["./src/styles/*"],
+      "@types": ["./src/types"],
+      "@types/*": ["./src/types/*"],
     }
   },
   "include": ["src"],

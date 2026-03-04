@@ -1,6 +1,6 @@
 import { Link as RouterLink } from 'react-router-dom'
 import { LogIn, Menu, Plus } from 'lucide-react'
-import DrawerComponent from '../common-ui/Drawer/Drawer'
+import DrawerComponent from '@components/common-ui/Drawer/Drawer'
 
 export function Navigation() {
   const menuItems = [

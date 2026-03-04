@@ -1,5 +1,5 @@
-import { apiClient } from './apiClient'
-import { Item } from '../types'
+import { apiClient } from '@api/apiClient'
+import { Item } from '@types'
 
 // export const itemsApi = {
 //   async fetchItems(): Promise<Item[]> {

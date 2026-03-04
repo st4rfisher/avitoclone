@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ItemType } from '../types'
+import { ItemType } from '@types'
 
 export const CreateItemPage = () => {
   const [itemType, setItemType] = useState<ItemType>('Недвижимость')

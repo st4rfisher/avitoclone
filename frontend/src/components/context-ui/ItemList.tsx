@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { itemsApi } from '../../api/items'
-import { Item, isRealEstate, isService } from '../../types'
-import { ItemCard } from './ItemCard'
+import { itemsApi } from '@api/items'
+import { Item, isRealEstate, isService } from '@types'
+import { ItemCard } from '@components/context-ui/ItemCard'
 
 export function ItemList() {
   const [items, setItems] = useState<Item[]>([])

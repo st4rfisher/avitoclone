@@ -1,6 +1,6 @@
 import { Link as RouterLink } from 'react-router-dom'
 import { LogIn, Package, Plus } from 'lucide-react'
-import { Navigation } from './Navigation'
+import { Navigation } from '@components/context-ui/Navigation'
 
 export function Header() {
   return (

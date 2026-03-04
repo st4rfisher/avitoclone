@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from '@/components/common-ui/chakra-ui/provider';
-import App from './App';
-import './styles/index.scss';
-import './styles/tailwind.css';
+import App from '@/App';
+import '@styles/index.scss';
+import '@styles/tailwind.css';
 
 
 const rootElement = document.getElementById('root')!

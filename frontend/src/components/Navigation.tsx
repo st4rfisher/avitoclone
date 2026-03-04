@@ -1,6 +1,5 @@
 import { Link as RouterLink } from 'react-router-dom'
-import { HStack, Link, Box, Button, VStack } from '@chakra-ui/react'
-import { Menu } from 'lucide-react'
+import { LogIn, Menu, Plus } from 'lucide-react'
 import DrawerComponent from './Drawer/Drawer'
 
 export function Navigation() {
@@ -13,39 +12,38 @@ export function Navigation() {
 
   return (
     <>
-      <HStack as="nav" gap={4} display={{ base: 'none', md: 'flex' }}>
+      <nav className="hidden items-center gap-4 md:flex">
         {menuItems.map((item) => (
-          <Link
+          <RouterLink
             key={item.label}
-            asChild
-            fontSize="sm"
-            color="gray.700"
-            _hover={{ color: 'blue.600', textDecoration: 'none' }}
+            to={item.to}
+            className="text-sm text-black no-underline transition-colors hover:text-black"
           >
-            <RouterLink to={item.to}>{item.label}</RouterLink>
-          </Link>
+            {item.label}
+          </RouterLink>
         ))}
-      </HStack>
+      </nav>
 
-      <Box display={{ base: 'block', md: 'none' }}>
+      <div className="block md:hidden">
         <DrawerComponent
           trigger={{
             customElement: (actions) => (
-              <Button
-                variant="ghost"
+              <button
+                type="button"
                 onClick={() =>
                   actions.toggleDrawer?.(Boolean(actions.isOpenDrawer))
                 }
                 aria-label="Открыть меню"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-md text-gray-700 transition-colors hover:bg-gray-100"
               >
                 <Menu size={22} />
-              </Button>
+              </button>
             ),
           }}
           menu={{
             items: menuItems,
             bottomSection: (actions) => (
-              <VStack align="stretch" gap={2} pt={2}>
+              <div className="flex flex-col items-stretch gap-2 pt-2">
                 <RouterLink
                   to="/login"
                   className="button button--tertiary"
@@ -53,6 +51,7 @@ export function Navigation() {
                     actions.toggleDrawer?.(Boolean(actions.isOpenDrawer))
                   }
                 >
+                  <LogIn size={16} />
                   Вход и регистрация
                 </RouterLink>
                 <RouterLink
@@ -62,13 +61,14 @@ export function Navigation() {
                     actions.toggleDrawer?.(Boolean(actions.isOpenDrawer))
                   }
                 >
-                  Подать объявление
+                  <Plus size={16} />
+                  Создать объявление
                 </RouterLink>
-              </VStack>
+              </div>
             ),
           }}
         />
-      </Box>
+      </div>
     </>
   )
 }

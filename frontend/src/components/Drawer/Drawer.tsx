@@ -43,8 +43,8 @@ export default function DrawerComponent({
         //   onOpenChange?.(details.open);
         }}
       >
-        <Drawer.Positioner>
-          <Drawer.Content>
+        <Drawer.Positioner zIndex={1600}>
+          <Drawer.Content bg="white">
             {menu.topSection &&
                 <Drawer.Header className="flex items-center space-x-3 p-4">
                     {menu.topSection(actions)}
@@ -66,7 +66,7 @@ export default function DrawerComponent({
                                     <Link  
                                         to={item.href}
                                         onClick={() => toggleDrawer(isOpen)}
-                                        className='w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center space-x-3 text-gray-700'    
+                                        className='w-full text-left px-4 py-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center space-x-3 text-black'    
                                     >
                                         {item.icon}
                                         <span>{item.label}</span>
@@ -88,7 +88,7 @@ export default function DrawerComponent({
             </Drawer.Body>
           </Drawer.Content>
         </Drawer.Positioner>
-        <Drawer.Backdrop />
+        <Drawer.Backdrop zIndex={1500}/>
       </Drawer.Root>
     </>
   );

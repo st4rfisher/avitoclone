@@ -1,4 +1,4 @@
-import { ItemList } from '../components/ItemList'
+import { ItemList } from '../components/context-ui/ItemList'
 
 export const MainPage = () => {
   return (

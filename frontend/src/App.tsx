@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { Box } from '@chakra-ui/react'
-import { Header } from './components/Header'
+import { Header } from './components/context-ui/Header'
 import { MainPage, ItemPage, CreateItemPage } from './pages'
 
 export default function App() {

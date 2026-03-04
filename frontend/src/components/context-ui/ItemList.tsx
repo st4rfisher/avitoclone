@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { itemsApi } from '../api/items'
-import { Item, isRealEstate, isService } from '../types'
+import { itemsApi } from '../../api/items'
+import { Item, isRealEstate, isService } from '../../types'
 import { ItemCard } from './ItemCard'
 
 export function ItemList() {

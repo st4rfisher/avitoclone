@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from '@/components/chakra-ui/provider';
 import App from './App';
 import './styles/index.scss';
+import './styles/tailwind.css';
+
 
 const rootElement = document.getElementById('root')!
 ReactDOM.createRoot(rootElement).render(

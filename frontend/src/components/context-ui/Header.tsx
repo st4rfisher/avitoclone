@@ -27,6 +27,8 @@ export function Header() {
             Подать объявление
           </RouterLink>
         </div>
+
+        <SearchComponent />
       </div>
     </header>
   )

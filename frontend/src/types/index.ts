@@ -1,1 +1,1 @@
-export * from '@/types/entity.types';
+export * from '@/types/items.types';

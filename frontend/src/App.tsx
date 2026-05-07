@@ -2,8 +2,16 @@ import { Routes, Route } from 'react-router-dom'
 import { Box } from '@chakra-ui/react'
 import { Header } from '@components/context-ui/Header'
 import { MainPage, ItemPage, CreateItemPage } from '@pages'
+import { useEffect } from 'react'
+import { useStore } from './store/store'
 
 export default function App() {
+  const { setItems } = useStore()
+
+  useEffect(() => {
+    setItems()
+  }, [setItems])
+
   return (
     <Box minH="100vh" display="flex" flexDirection="column">
       <Header />

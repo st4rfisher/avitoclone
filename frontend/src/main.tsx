@@ -6,7 +6,6 @@ import App from '@/App';
 import '@styles/index.scss';
 import '@styles/tailwind.css';
 
-
 const rootElement = document.getElementById('root')!
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>

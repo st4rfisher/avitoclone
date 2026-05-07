@@ -16,12 +16,12 @@ export function ItemCard({
   imageUrl,
 }: ItemCardProps) {
   return (
-    <article className="w-full max-w-[300px] rounded-2xl bg-white">
-      <div className="relative overflow-hidden rounded-2xl">
+    <article className="group w-full max-w-[300px] rounded-2xl border border-gray-200 bg-white p-3 transition-all duration-200 hover:-translate-y-1 hover:border-blue-100 hover:shadow-lg">
+      <div className="relative overflow-hidden rounded-xl">
         <img
           src={imageUrl}
           alt={title}
-          className="h-[220px] w-full object-cover"
+          className="h-[220px] w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
           loading="lazy"
         />
         <button
